@@ -22,10 +22,10 @@ jobs:
       - name: Build and push memoryGame
         run: |
           docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/MemoryGame ./MemoryGame
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/MemoryGame
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/MemoryGame:latest
 
       
       - name: Build and push piedrapapeltijereas
         run: |
           docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/RockPaperScissors ./RockPaperScissors
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/RockPaperScissors
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/RockPaperScissors:latest
