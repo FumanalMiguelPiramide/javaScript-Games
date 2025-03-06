@@ -30,7 +30,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: user/app:latest
+          tags: mfumanal/memorygame:latest
           
       - name: Build and push memoryGame
         run: |
