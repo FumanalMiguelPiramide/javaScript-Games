@@ -31,7 +31,7 @@ jobs:
         with:
           context: ./MemoryGame
           push: true
-          tags: mfumanal/memorygame:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/memorygame:latest
       
       -
         name: Build and push ppt panchitos
@@ -39,4 +39,4 @@ jobs:
         with:
           context: ./RockPaperScissor
           push: true
-          tags: mfumanal/rockpaperscissor:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/rockpaperscissor:latest
