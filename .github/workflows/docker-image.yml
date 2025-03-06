@@ -21,7 +21,7 @@ jobs:
         
       - name: Build and push memoryGame
         run: |
-          docker build -d ${{ secrets.DOCKER_USERNAME }}/MemoryGame ./MemoryGame
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/MemoryGame ./MemoryGame
           docker push ${{ secrets.DOCKER_USERNAME }}/MemoryGame
 
       
