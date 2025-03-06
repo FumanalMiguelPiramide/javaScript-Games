@@ -21,7 +21,7 @@ jobs:
         
       - name: Build and push memoryGame
         run: |
-          docker build -t mfumanal/memorygame:latest ../MemoryGame
+          docker build -t mfumanal/memorygame:latest ./MemoryGame
           docker push mfumanal/memorygame:latest
 
       
