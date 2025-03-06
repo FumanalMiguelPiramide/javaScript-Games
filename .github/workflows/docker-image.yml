@@ -21,8 +21,8 @@ jobs:
         
       - name: Build and push memoryGame
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/MemoryGame:latest ../MemoryGame
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/MemoryGame:latest
+          docker build -t mfumanal/MemoryGame:latest ../MemoryGame
+          docker push mfumanal/MemoryGame:latest
 
       
       - name: Build and push piedrapapeltijereas panza
