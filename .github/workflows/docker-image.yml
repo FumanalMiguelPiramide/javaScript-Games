@@ -40,5 +40,5 @@ jobs:
       
       - name: Build and push piedrapapeltijereas panza
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/RockPaperScissors:latest ../RockPaperScissors
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/RockPaperScissors:latest
+          docker build -t mfumanal/rockpaperscissors:latest ../RockPaperScissors
+          docker push mfumanal/rockpaperscissors:latest
