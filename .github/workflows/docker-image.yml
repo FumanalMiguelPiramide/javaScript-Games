@@ -34,11 +34,11 @@ jobs:
           
       - name: Build and push memoryGame
         run: |
-          docker build -t mfumanal/memorygame:latest ./MemoryGame/
+          docker build -t mfumanal/memorygame:latest ./MemoryGame
           docker push mfumanal/memorygame:latest
 
       
-      - name: Build and push piedrapapeltijereas panza
+      - name: Build and push piedrapapeltijereas
         run: |
-          docker build -t mfumanal/rockpaperscissors:latest ../RockPaperScissors
+          docker build -t mfumanal/rockpaperscissors:latest ./RockPaperScissors
           docker push mfumanal/rockpaperscissors:latest
