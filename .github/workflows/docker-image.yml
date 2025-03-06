@@ -34,7 +34,7 @@ jobs:
           tags: mfumanal/memorygame:latest
       
       -
-        name: Build and push ppt
+        name: Build and push ppt panchitos
         uses: docker/build-push-action@v6
         with:
           context: ./RockPaperScissor
