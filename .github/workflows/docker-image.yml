@@ -25,13 +25,18 @@ jobs:
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
           
-      - name: Build and push memoryGame
-        run: |
-          docker build -t mfumanal/memorygame:latest ./MemoryGame
-          docker push mfumanal/memorygame:latest
-
+      -
+        name: Build and push memory
+        uses: docker/build-push-action@v6
+        with:
+          context: ./MemoryGame
+          push: true
+          tags: mfumanal/memorygame:latest
       
-      - name: Build and push piedrapapeltijereas
-        run: |
-          docker build -t mfumanal/rockpaperscissors:latest ./RockPaperScissors
-          docker push mfumanal/rockpaperscissors:latest
+      -
+        name: Build and push ppt
+        uses: docker/build-push-action@v6
+        with:
+          context: ./RockPaperScissor
+          push: true
+          tags: mfumanal/rockpaperscissor:latest
